@@ -1,0 +1,162 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgba(0,0,0,0.5);
+    position : relative;
+    top : 0;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    margin : 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight : bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color : white;
+    padding : 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color : black;
+    box-shadow: 0 0 10px white;
+}
+/* Navbar */
+
+/* Home Section */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height : 920px;
+    justify-content:center;
+    align-items:center;
+    color: white;
+}
+
+#home::before{
+    content:"";
+    position : absolute;
+    top : 0;
+    right : 10;
+    background: url('images/portfolio-05.png') no-repeat center/cover;
+    height : 980px;
+    width : 103%;
+    z-index: -1;
+    opacity: 1;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top : 30%;
+    right : 10%;
+}
+
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+/* Home Section */
+
+/* About Me Section */
+#about{
+    display: flex;
+    flex-direction : column;
+    box-sizing: border-box;
+    padding : 20px;
+    margin-bottom : 50px;
+}
+
+#pic{
+    display : flex;
+}
+#pic img{
+    width : 200px;
+    height : 200px;
+    border-radius : 100%;
+}
+
+#intro{
+    display : flex;
+    flex-direction: column;
+    text-align: justify;
+    padding : 10px;
+}
+
+#intro h2{
+    font-size:2rem;
+    margin-bottom : 20px
+}
+
+#Portfolio {
+    background : black;
+}
+
+.gallery{
+    position : relative;
+    column-count: 4;
+    padding : 20px;
+}
+
+.image{
+    display: inline-block;
+    margin-bottom:10px;
+    overflow: hidden;
+}
+
+img{
+    width:100%;
+    transition: 0.25s ease-in-out;
+}
+
+.image:hover img{
+    transform: scale(1.1);
+    z-index:2;
+    
+}
+
+@media screen and (max-width:1024px){
+    h1{
+        font-size : 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .gallery{
+        column-count :3 ;
+    }
+}
+
+@media screen and (max-width:425px){
+    .gallery{
+        column-count :2 ;
+    }
+}
+
+@media screen and (max-width:375px){
+    .gallery{
+        column-count :1 ;
+    }
+}
